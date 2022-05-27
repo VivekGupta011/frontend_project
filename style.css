@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+   
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 659px;
+    margin: 0 auto;
+}
+h2 {
+    background: cornflowerblue;
+    text-align: center;
+    padding: 14px;
+}
+
+
+.bg-image {
+    background-image: url(./images/bg.jpg);
+    width: 100%;
+    height: 88vh;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+h3 {
+    font-size: 40px;
+    right: -56px;
+    bottom: -240px;
+    position: relative;
+}
+
+h6 {
+    font-size: 34px;
+    position: relative;
+    bottom: -302px;
+    right: -148px;
+}
+.images .image-gallery img {
+    width: 225px;
+    height: auto;
+    margin: 25px;
+    border: 1px solid;
+    padding: 12px;
+    box-shadow: 5px 10px 18px #888888;
+}
+.image-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.images h3 {
+    position: relative;
+    top: 0px;
+    background-color: darkgrey;
+    text-align: center;
+    right: 0px;
+    padding: 15px;
+}
+
+p {
+    position: relative;
+    top: -17px;
+    font-size: 25px;
+    right: -65px;
+}
+.footer-section h3 {
+    background-color: lightblue;
+    text-align: center;
+    top: 15px;
+    right: 0;
+    position: relative;
+    padding: 10px;
+    font-family: cursive;
+    font-size: 24px;
+}
+.social-connection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3px;
+    margin: 32px 0;
+}
+.social-connection img {
+    padding: 0 26px;
+    margin: 7px;
+}
+
+.footer-section p {
+    top: 30px;
+    position: relative;
+    right: -245px;
+}
+
+/* Responsiveness */
+
+
+
+@media(max-width:550px){
+    
+    .bg-image {
+        background-image: url(./images/bg.jpg);
+        width: 100%;
+        height: 99vh;
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+    .image-gallery {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .images .image-gallery img {
+        width: 336px;
+        height: auto;
+        margin: 25px;
+        border: 1px solid;
+        padding: 12px;
+        box-shadow: 5px 10px 18px #888888;
+    }
+    h3 {
+        font-size: 33px;
+        bottom: -233px;
+        left: 1px;
+        position: relative;
+    }
+    button.mybutton {
+        background-color: yellow;
+        padding: 2px 27px;
+        /* width: 60%; */
+        font-family: cursive;
+        font-size: 19px;
+        height: 58px;
+        border-radius: 15px;
+        font-weight: 900;
+        outline: none;
+        position: relative;
+        border: none;
+        left: 26%;
+        bottom: -273px;
+    }
+    .footer-section p {
+        top: 30px;
+        position: relative;
+        /* right: -245px; */
+        text-align: center;
+        left: -5px;
+    }
+} 
+
+
+@media(max-width:400px){
+    button.mybutton {
+        background-color: yellow !important;
+        font-family: cursive !important;
+        font-size: 15px !important;
+        height: 44px !important;
+        border-radius: 15px !important;
+        font-weight: 600 !important;
+        outline: none !important;
+        position: relative !important;
+        border: none !important;
+        left: 17% !important; 
+        bottom: -265px !important;
+    }
+    h3 {
+        font-size: 27px;
+        bottom: -233px;
+        text-align: center;
+        left: 0;
+        position: relative;
+    }
+    .bg-image {
+        background-image: url(./images/bg.jpg);
+        width: 100%;
+        height: 96vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%  100%;
+        background-blend-mode: darken;
+    }
+}
+
+button.mybutton {
+    background-color: yellow;
+    padding: 1px 20px;
+    font-family: cursive;
+    font-size: 27px;
+    height: 61px;
+    border-radius: 15px;
+    font-weight: 600;
+    outline: none;
+    position: relative;
+    border: none;
+    left: 26%;
+    bottom: -265px;
+}

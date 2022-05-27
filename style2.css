@@ -1,0 +1,168 @@
+/* The overall design setup */
+body{
+    background-color: aquamarine;
+    line-height: 20px;
+    font-size: 12px;
+    font-family: cursive;
+    padding: 0;
+}
+
+.container{
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* logo setup */
+.logo{
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 20px auto;
+}
+
+.logo img {
+    width: 52px;
+    height: 55px;
+    position: absolute;
+    top: 9px;
+    margin: 13px auto;
+}
+
+/* main content area */
+.content-body{
+
+    background-color: yellowgreen;
+    /* top bottom right left */
+    padding:40px 20px 0 20px ;
+    border-radius: 5px;
+}
+
+/* Styling the typography */
+h1{
+    font-weight: 400px;
+    font-size: 30px;
+    line-height: 40px;
+
+}
+p{
+    margin-bottom: 20px;
+}
+
+/* Styling the button */
+.button{
+    margin: 40px auto 20px;
+    width: 140px;
+}
+.button-link a{
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 1em 2em;
+    color: white;
+    border: 2px solid white;
+    text-transform: uppercase;
+}
+.button-link a:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+/* image styling */
+.content-body-image{
+    display: block;
+    min-height: 180px;
+    width: 100%;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 50px;
+
+}
+/* footer */
+
+.footer{
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.footer-header h2{
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 40x;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-address p{
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+}
+.footer-section-icons{
+    text-align: center;
+    margin: 20px 0 10px;
+}
+.footer-sub-links{
+    text-align: center;
+}
+.footer-sub-links a{
+    display: block;
+}
+/* customizing for the desktop version */
+
+@media(min-width:480px) {
+
+    .container{
+        max-width: 600px;
+    }
+    body{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .content-body{
+        padding-top: 60px;
+        height: 710px;
+
+    }
+    .content-body-text{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .button{
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+    .content-body-image{
+        height: 300px;
+    }
+    /* updating the footer */
+    .footer-header h2{
+        text-align: left;
+    }
+    .footer{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .footer-address .footer-section-icons .footer-sub-links{
+        float: left;
+    }
+    .footer-header h2{
+        text-align: right;
+    }
+    .footer-address, .footer-social-icons, .footer-sub-links {
+        float: left;
+         width: 33.33%;
+    }
+    .footer-address p{
+        text-align: left;
+    }
+    .footer-sub-links{
+        text-align: right;
+    }
+    .footer-section-icons {
+        text-align: right;
+        margin: 20px 0 10px;
+    }
+}
