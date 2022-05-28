@@ -1,0 +1,308 @@
+/* the overall design setup */
+.container {
+  max-width: 602px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: azure;
+}
+body {
+  background-color: #e0e0e0;
+  font-family: cursive;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0;
+  margin: 0;
+}
+.content-body {
+  background-image: url("./adfj-bg.png");
+  background-size: 52% 78%;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 299px;
+  padding: 25px 30px;
+}
+.logo a img {
+  width: 62px;
+  height: 59px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+}
+/* typography */
+h3 {
+  position: relative;
+  top: -30px;
+  font-size: 16px;
+}
+h2 {
+  position: relative;
+  top: -42px;
+  font-size: 25px;
+}
+.question-mark {
+  position: relative;
+  font-size: 64px;
+  top: -26px;
+  right: -29px;
+}
+
+button#mybtn {
+  background-color: aqua;
+  outline: none;
+  border: none;
+  font-size: 13px;
+  border-radius: 15px;
+  padding: 7px 7px;
+}
+
+p.text {
+  position: relative;
+  left: -14px;
+}
+
+.content-body-text {
+  position: relative;
+  right: -32px;
+}
+
+.content-typography {
+  padding: 5px 25px;
+}
+.heading {
+  color: blue;
+  font-size: 20px;
+}
+
+h4 {
+  border: 5px solid green;
+  width: 63%;
+  text-align: center;
+  right: 74px;
+  top: 11px;
+  position: relative;
+  padding: 28px;
+}
+.dynamic-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mybutton.dynamic-text {
+  position: relative;
+  top: 41px;
+  right: -42px;
+}
+
+/* three step part */
+.steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 25px 25px;
+}
+.step-2 {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+}
+.hiring h3 {
+  text-align: center;
+  font-size: 22px;
+}
+a {
+  text-decoration: none;
+  color: darkviolet;
+}
+.steps-image h3.numbering-1 {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  padding: 3px 3px;
+  background: yellow;
+  border: 2px solid #000;
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+}
+.steps-image h3.numbering-2 {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  padding: 3px 3px;
+  background: yellow;
+  border: 2px solid #000;
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+}
+.steps-image h3.numbering-3 {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  padding: 3px 3px;
+  background: yellow;
+  border: 2px solid #000;
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* images */
+.step-2 .steps-image img {
+  width: 72%;
+  height: 50%;
+  position: relative;
+  top: -30px;
+}
+
+p.step-text {
+  position: relative;
+  padding: 1px 20px;
+  top: -39px;
+}
+
+h3.numbering-1 {
+  position: relative;
+  right: -24px;
+}
+
+h3.numbering-2 {
+  position: relative;
+  right: -65px;
+}
+
+h3.numbering-3 {
+  position: relative;
+  right: -47px;
+}
+
+/* footer */
+.footer-text {
+  padding: 2px 25px;
+  background-color: aquamarine;
+  width: 80%;
+  position: relative;
+  right: -34px;
+  height: 85px;
+
+  border-radius: 13px;
+}
+.footer-content .play-store {
+  text-align: center;
+  position: relative;
+  top: -12px;
+}
+
+.footer-content .footer-text p {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.footer-last {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icons {
+  text-align: center;
+}
+
+.footer-textt {
+  text-align: center;
+}
+
+/* responsive for mobile view */
+@media (max-width: 450px) {
+  .content-body {
+    background-image: url("./adfj-bg.png");
+    background-size: 47% 80% !important;
+    background-repeat: no-repeat, no-repeat !important;
+    background-position: 241px !important;
+    padding: 25px 30px !important;
+  }
+
+  .footer-text {
+    padding: 2px 25px;
+    background-color: aquamarine;
+    width: 80%;
+    position: relative;
+    right: -18px;
+    height: 84px;
+    border-radius: 13px;
+  }
+
+  .step-2 {
+    display: block;
+  }
+  .step-2 .steps-image img {
+    width: 40%;
+    height: auto;
+    position: relative;
+    top: -30px;
+    margin-right: auto;
+    display: block;
+    margin-left: auto;
+  }
+  p.step-text {
+    position: relative;
+    padding: 1px 5px;
+    top: -39px;
+    text-align: center;
+    font-size: 26px;
+  }
+  h3.numbering-3 {
+    position: relative;
+    right: -161px;
+    top: -5px;
+  }
+  h3.numbering-2 {
+    position: relative;
+    right: -169px;
+  }
+
+  h3.numbering-1 {
+    position: relative;
+    right: -159px;
+  }
+  h4 {
+    border: 3px solid green;
+    width: 59%;
+    text-align: center;
+    right: 24px;
+    top: 11px;
+    position: relative;
+    padding: 19px;
+  }
+  .dynamic-text p {
+    font-size: 12px;
+    position: relative;
+    right: 18px;
+  }
+  h3 {
+    position: relative;
+    top: -29px;
+    font-size: 14px;
+  }
+  h2 {
+    position: relative;
+    top: -42px;
+    font-size: 21px;
+  }
+  .content-body-text {
+    position: relative;
+    right: -7px;
+  }
+  .content-body {
+    background-image: url("./adfj-bg.png");
+    background-size: 52% 79% !important;
+    background-repeat: no-repeat, no-repeat !important;
+    background-position: 202px !important;
+    padding: 25px 30px !important;
+  }
+  p {
+    padding: 0 5px;
+  }
+}
